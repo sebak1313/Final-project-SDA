@@ -1,0 +1,569 @@
+{
+  "id": "f9ff31b9-6ac1-40c0-8b75-1d8b91278505",
+  "version": "2.0",
+  "name": "test reanalizatora klimatu",
+  "url": "https://climatereanalyzer.org/",
+  "tests": [{
+    "id": "be60242c-10d6-4e3f-bfab-b37b97bdff93",
+    "name": "3. button Hourly Forecast Maps",
+    "commands": [{
+      "id": "c5c3dd57-684f-4561-bb53-3185b0f4d434",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "648b7015-b7e0-4c3b-8e71-adcd32da0323",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "856b3ca1-0a59-41cb-889c-c69952316952",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hourly Forecast Maps",
+      "targets": [
+        ["linkText=Hourly Forecast Maps", "linkText"],
+        ["css=.a:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Hourly Forecast Maps')]", "xpath:link"],
+        ["xpath=//div[@id='left_panel']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'wx/fcst/')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hourly Forecast Maps')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "14ab2437-2eb5-42ec-9083-f416b6a4f857",
+    "name": "1. button Today's Weather Maps",
+    "commands": [{
+      "id": "bdb4ee79-0028-47a2-a830-5c6e4f383eb7",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a55ef761-cbab-43e2-a3fd-ea4c4f2c6521",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5eda4c46-7fef-47f0-89d1-d3d9e68e8efb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Today's Weather Maps",
+      "targets": [
+        ["linkText=Today's Weather Maps", "linkText"],
+        ["css=.a:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='left_panel']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'wx/DailySummary/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6167c171-5e2b-40b7-b4c7-05548e4bb2f7",
+    "name": "5. button Outlook Forecast Maps",
+    "commands": [{
+      "id": "31330a1e-cd7e-4a05-994e-63884e4a1d09",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a84af1ac-19f4-4730-a5c9-457f53ac630a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fbb9ffb-df56-4bf4-861e-d18e82ccca6f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Outlook Forecast Maps",
+      "targets": [
+        ["linkText=Outlook Forecast Maps", "linkText"],
+        ["css=.a:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Outlook Forecast Maps')]", "xpath:link"],
+        ["xpath=//div[@id='left_panel']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'wx/fcst_outlook/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Outlook Forecast Maps')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "64b2d890-1aac-494f-8751-1bd2d25e6e28",
+    "name": "2. button Home",
+    "commands": [{
+      "id": "427619c3-2110-4168-8cbb-17726b058952",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/wx/DailySummary/#t2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "611c55cb-0f0e-48e6-8c38-68323a64b152",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3d2b91e-28c6-482d-8344-f6c9d5eee629",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.header-menubar > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='menubar-options-wrap']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://climatereanalyzer.org/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6cf6348b-b36d-4b85-b29e-d54b6888a28b",
+    "name": "6. run Image Slider",
+    "commands": [{
+      "id": "84931b52-1228-418e-8a70-5e4889c4a1ed",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/wx/fcst/?mdl_id=hrrr&dm_id=conus-lc&wm_id=prcp-mslp-gph500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "420d5d32-88bd-4257-b4e0-30571b68ec43",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='wrapper']/div[2]/fieldset/span[5]/img",
+      "targets": [
+        ["css=span:nth-child(5) > img", "css:finder"],
+        ["xpath=//div[@id='wrapper']/div[2]/fieldset/span[5]/img", "xpath:idRelative"],
+        ["xpath=//span[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cc7fbaeb-ca01-481c-bd00-7f13fafa0a0a",
+    "name": "4. check the data source",
+    "commands": [{
+      "id": "6ba32e6c-ecdc-4572-9c27-3ec2eb98e8da",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/wx/fcst_outlook/?dm_id=conus-lc2&nday=3-day",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aead21be-4e6c-4348-ac2c-d19d3c13dfb8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a685456-e49a-41bd-bbbc-af729cef4fd2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=NCEP Global Forecast System",
+      "targets": [
+        ["linkText=NCEP Global Forecast System", "linkText"],
+        ["css=p:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'NCEP Global Forecast System')]", "xpath:link"],
+        ["xpath=//div[@id='wrapper']/div[6]/p/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://nomads.ncep.noaa.gov/txt_descriptions/GFS_doc.shtml']", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'NCEP Global Forecast System')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6140",
+      "windowTimeout": 2000
+    }, {
+      "id": "a304ff4b-6a50-464c-ac89-48d16d938c64",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6140}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4aee816c-5627-42ad-b404-8069ab963d5b",
+    "name": "7. button Latest U.S. Satellite Images",
+    "commands": [{
+      "id": "c58c0bb4-0fdd-40c7-810b-4cd6b77551be",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18c74cfa-d775-4c5c-b1dc-7d2428c86c84",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4616a3ff-dd30-47e4-a51e-dc97f8976834",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Latest U.S. Satellite Images",
+      "targets": [
+        ["linkText=Latest U.S. Satellite Images", "linkText"],
+        ["css=.a:nth-child(2) > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Latest U.S. Satellite Images')]", "xpath:link"],
+        ["xpath=//div[@id='left_panel']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'wx/rad-sat/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Latest U.S. Satellite Images')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "841ced6c-793a-470f-9c99-2787291b93f7",
+    "name": "8. open and zoom in on the picture",
+    "commands": [{
+      "id": "d687a33e-fcf3-4f75-b67f-7df4545dbfc4",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/wx/rad-sat/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b812f3f3-5474-4a78-936b-185de862499d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c432154-a265-4f50-9e65-308a26d77776",
+      "comment": "",
+      "command": "click",
+      "target": "css=.section-headings:nth-child(2) img",
+      "targets": [
+        ["css=.section-headings:nth-child(2) img", "css:finder"],
+        ["xpath=//img[@alt='GOES-East']", "xpath:img"],
+        ["xpath=//div[@id='wrapper']/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win7629",
+      "windowTimeout": 2000
+    }, {
+      "id": "86fa10bc-6db7-4c53-af77-40ea3e5eedc7",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79f59a97-9e6e-4be5-a646-d55172b01a32",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win7629}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79a9308a-983f-4220-9da6-1b10f6219a49",
+      "comment": "",
+      "command": "click",
+      "target": "css=img",
+      "targets": [
+        ["css=img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.star.nesdis.noaa.gov/GOES16/ABI/CONUS/GEOCOLOR/5000x3000.jpg')]", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bc0345a5-55ca-4741-95a7-d006538d47d8",
+    "name": "9. button Archived U.S. Satellite",
+    "commands": [{
+      "id": "63881fb0-2094-404a-baf2-3ad9688b90d7",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58e3ff03-933d-43db-8705-6f73ef629545",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "911467d0-a294-423b-8977-23360c26a061",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Archived U.S. Satellite",
+      "targets": [
+        ["linkText=Archived U.S. Satellite", "linkText"],
+        ["css=.a:nth-child(2) > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Archived U.S. Satellite')]", "xpath:link"],
+        ["xpath=//div[@id='left_panel']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'wx/satellite/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Archived U.S. Satellite')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win1881",
+      "windowTimeout": 2000
+    }]
+  }, {
+    "id": "1a10b446-4c8e-438e-9a4d-602dedae561a",
+    "name": "10. change of parameters",
+    "commands": [{
+      "id": "559e56e9-d1ba-4aca-8c5d-b75ad9ac0fcb",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/wx/satellite/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "151c42bc-d619-4451-87e3-40cfd2cdaf43",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7209a39e-d767-49f7-95d9-6e4315319db3",
+      "comment": "",
+      "command": "click",
+      "target": "id=param_pulldown",
+      "targets": [
+        ["id=param_pulldown", "id"],
+        ["css=#param_pulldown", "css:finder"],
+        ["xpath=//select[@id='param_pulldown']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='param_div']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e672acc-c6aa-4c89-bed7-a2d974363ad0",
+      "comment": "",
+      "command": "select",
+      "target": "id=param_pulldown",
+      "targets": [],
+      "value": "label=Infrared"
+    }, {
+      "id": "2f194c08-70c9-4845-b472-d8f2b81efdcd",
+      "comment": "",
+      "command": "click",
+      "target": "id=year_pulldown",
+      "targets": [
+        ["id=year_pulldown", "id"],
+        ["css=#year_pulldown", "css:finder"],
+        ["xpath=//select[@id='year_pulldown']", "xpath:attributes"],
+        ["xpath=//fieldset[@id='ymd_div']/select", "xpath:idRelative"],
+        ["xpath=//fieldset[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "835a4fb1-e182-4b36-9664-c15af7c5b932",
+      "comment": "",
+      "command": "select",
+      "target": "id=year_pulldown",
+      "targets": [],
+      "value": "label=2013"
+    }]
+  }, {
+    "id": "e7b13217-9f43-4d7b-bba6-61848a4ee5b6",
+    "name": "11. Your Weather Search",
+    "commands": [{
+      "id": "f3127e6f-3004-4c38-b054-764eda9ae639",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a035ced-77ef-400d-9b6f-49c693c8d26e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82efa780-9aeb-432a-865e-59567fd3995a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Today's Weather Maps",
+      "targets": [
+        ["linkText=Today's Weather Maps", "linkText"],
+        ["css=.a:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//div[@id='left_panel']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'wx/DailySummary/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e8f2a17-15b0-4bfb-b72b-bfcefcb7e88f",
+      "comment": "",
+      "command": "click",
+      "target": "id=placename_input",
+      "targets": [
+        ["id=placename_input", "id"],
+        ["name=Address", "name"],
+        ["css=#placename_input", "css:finder"],
+        ["xpath=//input[@id='placename_input']", "xpath:attributes"],
+        ["xpath=//div[@id='header-top']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64cdd9bb-3b1a-445f-a2c9-95979dc53b29",
+      "comment": "",
+      "command": "type",
+      "target": "id=placename_input",
+      "targets": [
+        ["id=placename_input", "id"],
+        ["name=Address", "name"],
+        ["css=#placename_input", "css:finder"],
+        ["xpath=//input[@id='placename_input']", "xpath:attributes"],
+        ["xpath=//div[@id='header-top']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lodz"
+    }, {
+      "id": "55e2ba2f-5113-46a0-b94d-02da43238bd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=subbutton",
+      "targets": [
+        ["id=subbutton", "id"],
+        ["name=submit", "name"],
+        ["css=#subbutton", "css:finder"],
+        ["xpath=//input[@id='subbutton']", "xpath:attributes"],
+        ["xpath=//div[@id='header-top']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "815c700a-4e83-4481-a0d8-df15b73723e9",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0b743393-082c-4987-a39a-36923e230242",
+    "name": "12. Explore Climate Change",
+    "commands": [{
+      "id": "2a2bd947-4391-4b47-92f9-08149bd93dbb",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cd841ba-fe28-438c-a1d7-00564dc9fff8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad887896-e2de-4531-a0df-d25a9e83aa91",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Explore Climate Change",
+      "targets": [
+        ["linkText=Explore Climate Change", "linkText"],
+        ["css=.a:nth-child(6) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Explore Climate Change')]", "xpath:link"],
+        ["xpath=//div[@id='left_panel']/ul[3]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'clim/explore/')]", "xpath:href"],
+        ["xpath=//ul[3]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Explore Climate Change')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "380e3d77-51eb-4681-9849-057c5952b64c",
+    "name": "13. select content about the Arctic",
+    "commands": [{
+      "id": "d2e9dfe6-fa1a-4175-966a-34897e5b0ecc",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/clim/explore/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b85a7da-6bba-4a6b-bab1-3865ae0c52b3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45ca7f9f-3d57-41fd-ad15-122910a6c952",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Arctic",
+      "targets": [
+        ["linkText=Arctic", "linkText"],
+        ["css=li:nth-child(3) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Arctic')]", "xpath:link"],
+        ["xpath=(//a[@onclick='javascript:showhide(1);'])[4]", "xpath:attributes"],
+        ["xpath=//ul[@id='list-1']/li[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#s2b')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Arctic')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7e3795cf-efbb-4a5f-99e7-aa18b7e3c4c1",
+    "name": "14. check",
+    "commands": [{
+      "id": "cd0d68a9-f2c0-4b1c-a942-f3e683759212",
+      "comment": "",
+      "command": "open",
+      "target": "https://climatereanalyzer.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b71aab2-f795-4d3e-bed3-7588872e14d6",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Climate Reanalyzer",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c78636e-f2be-44f3-aad0-193dde83e99f",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5567e1dc-67bd-4d56-ba16-af811023e8db",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["be60242c-10d6-4e3f-bfab-b37b97bdff93"]
+  }],
+  "urls": ["https://climatereanalyzer.org/", "https://climatereanalyzer.org/wx/fcst/?mdl_id=hrrr&dm_id=conus-lc&wm_id=prcp-mslp-gph500", "https://climatereanalyzer.org/wx/DailySummary/#t2"],
+  "plugins": []
+}

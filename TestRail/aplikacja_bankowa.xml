@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S2</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Functional testing</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Manager</name>
+		<description>Section for testing features available for Manager role.</description>
+										<sections>
+		<section>
+		<name>New Customer</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Edit Customer</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Delete Customer</name>
+		<description></description>
+									</section>
+			<section>
+		<name>New Account</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Edit Account</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Delete Account</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Deposit</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Whithdrawal</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Fund Transfer</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Change Password</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Balance Enquiry</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Mini Statement</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Customized Statemen t</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Login &amp; Logout</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive flow</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C1</id>
+				<title>Login with valid credentials</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php ).
+3. At least one manager exists in application
+
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C2</id>
+				<title>Manager without linked customers - TO BE DISCUSSED</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+4. Manager doesn&apos;t have linked customer.</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+4. User doesn&apos;t see list of customers linked to his manager account.
+5. User can see a message &quot;You don&apos;t have any linked Customer yet&quot; - TBD
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C3</id>
+				<title>Manager with several customers - TO BE DISCUSSED</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+4. Manager has several linked customers.</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+4. User can see list of all customers linked to his manager account.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C4</id>
+				<title>Login with valid credentials after using Reset button</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters invalid login in LoginID field.
+3. User enters invalid password in Password field.
+4. User click Reset button.
+5. Invalid credentials are removed from form fields.
+6. User enters valid login in LoginID field.
+7. User enters valid password in Password field. 
+8. User clicks Login button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Negative flow</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Invalid credentials</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C5</id>
+				<title>User doesn&apos;t exist in application</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters not existed in application login in LoginID field.
+3. User enters random password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is displayed &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C6</id>
+				<title>Incorrect password</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters incorrect password in Password field.
+4. User clicks Login button.</steps>
+										<expected>1. Error message is displayed &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.
+</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Missing data</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C7</id>
+				<title>Empty fields in login form</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+</preconds>
+										<steps>1. User opens Home page.
+2. User clicks Submit button.</steps>
+										<expected>1. Error message is displayed: &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C8</id>
+				<title>Empty password</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User clicks Login button.</steps>
+										<expected>1. Error message is displayed &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C9</id>
+				<title>Empty UserID</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid password in Password field.
+3. User clicks Login button.</steps>
+										<expected>1. Error message is displayed &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C10</id>
+				<title>Empty fields in login form after using Reset button</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Reset button.
+5. Credentials from form are removed.
+6. User clicks Login button.</steps>
+										<expected>1. Error message is displayed: &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+			<section>
+		<name>Customer</name>
+		<description>Section for testing features available for Customer role.</description>
+										<sections>
+		<section>
+		<name>Balance enquiry</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Fund Transfer</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Mini Statement</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Customized Statement</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Change Password</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Login &amp; Logout</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive flow</name>
+		<description>Valid login and valid password</description>
+						<cases>
+												<case>
+				<id>C11</id>
+				<title>Login with valid credentials</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one customer exists in the application (created by Manager)
+4. Customer has at least one account.</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+4. User can see his banking accounts.</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C12</id>
+				<title>Customer with several accounts</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one customer exists in application
+4. Customer has several accounts (saving and current)</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+4. User can see list of his all accounts (saving and current).
+</expected>
+									</custom>
+							</case>
+															<case>
+				<id>C13</id>
+				<title>Login with valid credentials after using Reset button</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																				<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one customer exists in application
+4. Customer has at least one linked account.</preconds>
+										<steps>1. User opens Home page.
+2. User enters invalid login in LoginID field.
+3. User enters invalid password in Password field.
+4. User click Reset button.
+5. Invalid credentials are removed from form fields.
+6. User enters valid login in LoginID field.
+7. User enters valid password in Password field. 
+8. User clicks Login button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+4. User can see his banking accounts.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+			<section>
+		<name>Negative flow</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Invalid credentials</name>
+		<description></description>
+									</section>
+			<section>
+		<name>Missing data</name>
+		<description></description>
+									</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+	</sections>
+			</section>
+			<section>
+		<name>User without role - TO BE DISCUSSED</name>
+		<description>Need clarification if user without role can exist in application</description>
+									</section>
+	</sections>
+			</section>
+			<section>
+		<name>Exploratory testing</name>
+		<description></description>
+						<cases>
+												<case>
+				<id>C14</id>
+				<title>New Customer feature</title>
+												<template>Exploratory Session</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																				<estimate>900</estimate>
+																								<references>GBP-32</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>Checking New Customer feature. We will focus on adding new customer by manager. We check form validation and visibility of customers in the application.
+</mission>
+										<goals>- positive flow (add customer with valid data)
+- check all fields in form (validation messages),
+- negative flow
+- checking list of customers (visibility from Manager side)
+</goals>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
