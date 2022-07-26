@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<run>
+	<id>R3</id>
+	<name>Authentication - Manager role 2022-07-17</name>
+	<description>Verification of authentication process for Manager role</description>
+	<config></config>
+	<createdon>2022-07-17T19:48:26Z</createdon>
+		<completed>false</completed>
+		<milestone></milestone>
+	<stats>
+										<passed>
+			<percent>30</percent>
+			<count>3</count>
+		</passed>
+											<blocked>
+			<percent>10</percent>
+			<count>1</count>
+		</blocked>
+											<untested>
+			<percent>0</percent>
+			<count>0</count>
+		</untested>
+											<retest>
+			<percent>0</percent>
+			<count>0</count>
+		</retest>
+											<failed>
+			<percent>60</percent>
+			<count>6</count>
+		</failed>
+																																																				</stats>	<sections>
+		<section>
+		<name>Functional testing</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Manager</name>
+		<description>Section for testing features available for Manager role.</description>
+										<sections>
+		<section>
+		<name>New Customer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Edit Customer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Delete Customer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>New Account</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Edit Account</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Delete Account</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Deposit</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Whithdrawal</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Fund Transfer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Change Password</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Balance Enquiry</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Mini Statement</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Customized Statemen t</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Login &amp; Logout</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive flow</name>
+		<description></description>
+						<tests>
+																																																									<test>
+				<id>T17</id>
+				<title>Login with valid credentials</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php ).
+3. At least one manager exists in application
+
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+
+</expected>
+									</custom>
+												<caseid>C1</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																														<defects>GBP-145</defects>
+																<changes>
+															<change>
+						<createdon>2022-07-17T20:38:36Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects>GBP-145</defects>
+																													</change>
+															<change>
+						<createdon>2022-07-17T19:48:26Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T18</id>
+				<title>Manager without linked customers - TO BE DISCUSSED</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+4. Manager doesn&apos;t have linked customer.</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+4. User doesn&apos;t see list of customers linked to his manager account.
+5. User can see a message &quot;You don&apos;t have any linked Customer yet&quot; - TBD
+</expected>
+									</custom>
+												<caseid>C2</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T21:29:07Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment>List of customers - where is it? There is no menu element to open it, Manager cannot see customers (those issues will be reported in test cases related to Customer creation feature).</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-07-17T19:48:26Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T19</id>
+				<title>Manager with several customers - TO BE DISCUSSED</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+4. Manager has several linked customers.</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+4. User can see list of all customers linked to his manager account.
+</expected>
+									</custom>
+												<caseid>C3</caseid>
+																<status>Blocked</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T19:48:26Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Blocked</status>
+												<assignedto></assignedto>
+												<comment>Need to be clarified - where is Customer list.</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T20</id>
+				<title>Login with valid credentials after using Reset button</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters invalid login in LoginID field.
+3. User enters invalid password in Password field.
+4. User click Reset button.
+5. Invalid credentials are removed from form fields.
+6. User enters valid login in LoginID field.
+7. User enters valid password in Password field. 
+8. User clicks Login button.</steps>
+										<expected>1. Error message is not displayed.
+2. User is signed in to the application.
+3. User can see Main menu for authenticated users.
+
+</expected>
+									</custom>
+												<caseid>C4</caseid>
+																<status>Passed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T21:36:39Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Passed</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-07-17T19:48:26Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Negative flow</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Invalid credentials</name>
+		<description></description>
+						<tests>
+																																																									<test>
+				<id>T21</id>
+				<title>User doesn&apos;t exist in application</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters not existed in application login in LoginID field.
+3. User enters random password in Password field.
+4. User clicks Submit button.</steps>
+										<expected>1. Error message is displayed &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.
+</expected>
+									</custom>
+												<caseid>C5</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T21:51:01Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>After login with invalid credentials, page is reloaded, user can see blank page with browser popup. Message is correct, but should be visible in login form. Page should not be reloaded.</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-07-17T19:48:26Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T22</id>
+				<title>Incorrect password</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters incorrect password in Password field.
+4. User clicks Login button.</steps>
+										<expected>1. Error message is displayed &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.
+</expected>
+									</custom>
+												<caseid>C6</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T21:54:19Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Po zalogowaniu się z nieprawidłowymi danymi, strona jest ponownie ładowana, użytkownik może zobaczyć pustą stronę z wyskakującym okienkiem przeglądarki. Wiadomość jest poprawna, ale powinna być widoczna w formularzu logowania. Strona nie powinna być ponownie ładowana.
+
+</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-07-17T19:48:26Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+		<section>
+		<name>Missing data</name>
+		<description></description>
+						<tests>
+																																																									<test>
+				<id>T23</id>
+				<title>Empty fields in login form</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+</preconds>
+										<steps>1. User opens Home page.
+2. User clicks Submit button.</steps>
+										<expected>1. Error message is displayed: &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.</expected>
+									</custom>
+												<caseid>C7</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T22:03:23Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Improvement: Login button could be disabled if UserID or Password field is empty.
+
+When user clicks on field and move to other without entering value, validation message is displayed, but there is no empty space between field and message.
+Message should be in red colour.</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-07-17T19:48:27Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																													<test>
+				<id>T24</id>
+				<title>Empty password</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User clicks Login button.</steps>
+										<expected>1. Error message is displayed &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.
+</expected>
+									</custom>
+												<caseid>C8</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T19:48:27Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Improvement: Login button could be disabled if UserID or Password field is empty.
+
+When user clicks on field and move to other without entering value, validation message is displayed, but there is no empty space between field and message.
+Message should be in red colour.</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T25</id>
+				<title>Empty UserID</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+3. At least one manager exists in application
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid password in Password field.
+3. User clicks Login button.</steps>
+										<expected>1. Error message is displayed &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.
+</expected>
+									</custom>
+												<caseid>C9</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T22:06:52Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Improvement: Login button could be disabled if UserID or Password field is empty.
+
+When user clicks on field and move to other without entering value, validation message is displayed, but there is no empty space between field and message.
+Message should be in red colour.</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-07-17T19:48:27Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+																																																												<test>
+				<id>T26</id>
+				<title>Empty fields in login form after using Reset button</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Critical</priority>
+																<estimate></estimate>
+																								<references>GBP-1</references>
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>1. Banking application is up and running.
+2. Home page is available (https://demo.guru99.com/V4/index.php).
+</preconds>
+										<steps>1. User opens Home page.
+2. User enters valid login in LoginID field.
+3. User enters valid password in Password field.
+4. User clicks Reset button.
+5. Credentials from form are removed.
+6. User clicks Login button.</steps>
+										<expected>1. Error message is displayed: &quot;User or password is not invalid&quot;.
+2. User is NOT signed in to the application.
+3. User can see login form and can try to login again.</expected>
+									</custom>
+												<caseid>C10</caseid>
+																<status>Failed</status>
+								<assignedto></assignedto>
+												<inprogress></inprogress>
+																																																																																						<changes>
+															<change>
+						<createdon>2022-07-17T22:06:52Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Failed</status>
+												<assignedto></assignedto>
+												<comment>Improvement: Login button could be disabled if UserID or Password field is empty.
+
+When user clicks on field and move to other without entering value, validation message is displayed, but there is no empty space between field and message.
+Message should be in red colour.</comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+															<change>
+						<createdon>2022-07-17T19:48:27Z</createdon>
+																		<createdby>Sebastian Sochaczewski</createdby>
+												<status>Untested</status>
+												<assignedto></assignedto>
+												<comment></comment>
+																		<version></version>
+																														<elapsed></elapsed>
+																														<defects></defects>
+																													</change>
+									</changes>
+			</test>
+								</tests>
+							</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>Customer</name>
+		<description>Section for testing features available for Customer role.</description>
+										<sections>
+		<section>
+		<name>Balance enquiry</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Fund Transfer</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Mini Statement</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Customized Statement</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Change Password</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Login &amp; Logout</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Positive flow</name>
+		<description>Valid login and valid password</description>
+									</section>
+		<section>
+		<name>Negative flow</name>
+		<description></description>
+										<sections>
+		<section>
+		<name>Invalid credentials</name>
+		<description></description>
+									</section>
+		<section>
+		<name>Missing data</name>
+		<description></description>
+									</section>
+</sections>
+			</section>
+</sections>
+			</section>
+</sections>
+			</section>
+		<section>
+		<name>User without role - TO BE DISCUSSED</name>
+		<description>Need clarification if user without role can exist in application</description>
+									</section>
+</sections>
+			</section>
+		<section>
+		<name>Exploratory testing</name>
+		<description></description>
+									</section>
+</sections>
+</run>
